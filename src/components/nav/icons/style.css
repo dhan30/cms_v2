@@ -1,0 +1,29 @@
+.navybar {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.iconStyle {
+  vertical-align: middle;
+  width: 100%;
+  hieght: 100%;
+  border: 2px solid yellow;
+  border-radius: 2px;
+  margin: 0 0 .6px 0;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
+.iconActive {
+  vertical-align: middle;
+  width: 100%;
+  hieght: 100%;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 0 0 .6px 0;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}

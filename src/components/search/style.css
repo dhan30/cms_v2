@@ -1,0 +1,11 @@
+.searchBar {
+  height: 30px;
+  border: 2px solid pink;
+}
+
+.inputBox {
+  float: right;
+  margin: 0;
+  width: 100%;
+  color: black;
+}

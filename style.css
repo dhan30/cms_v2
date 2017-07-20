@@ -1,0 +1,15 @@
+.main-container {
+border: 1.25px solid #2e2d30;
+width: 100%;
+
+}
+
+
+#col-1 {
+background-color: #eff2f7;
+}
+
+#col-2 {
+background-color: #2e333a;
+color: white;
+}
