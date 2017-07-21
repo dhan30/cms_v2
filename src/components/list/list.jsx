@@ -5,7 +5,7 @@ import style from './style.css';
 class List extends React.Component {
   render() {
     return (
-      <div>client list here</div>
+      <div className={style.list}>client list here</div>
     );
   }
 }

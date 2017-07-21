@@ -5,6 +5,7 @@ import Selectable from '../Calendar/Selectable';
 import Nav from '../Nav/Nav';
 import List from '../List/List';
 import Icons from '../Nav/Icons/Icons';
+import Images from '../Images/Images';
 
 
 
@@ -25,7 +26,10 @@ class Content extends React.Component {
       <div className= " container-fluid main-container container">
         <div className='row'>
           <div className={style.body}>
-            <div className="col-sm-2 columns" id="col-1">
+          <div className="col-sm-1 columns" id="col-1">
+            <Images />
+          </div>
+            <div className="col-sm-1 columns" id="col-3">
               <Nav changeView={this.viewHandler} active={this.state.view}/>
             </div>
             <div className="col-sm-10 columns" id="col-2">

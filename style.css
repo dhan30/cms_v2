@@ -4,12 +4,21 @@ width: 100%;
 
 }
 
+#col-1, #col-2, #col-3 {
+  height: 950px;
+}
 
 #col-1 {
 background-color: #eff2f7;
+border-right: 1px solid grey;
 }
 
-#col-2 {
-background-color: #2e333a;
-color: white;
+#col-3 {
+background-color: white;
+color: black;
+}
+
+#col-2{
+  background-color: #2e333a;
+  color: white;
 }
