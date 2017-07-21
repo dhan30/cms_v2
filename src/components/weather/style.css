@@ -5,3 +5,26 @@
   width: 45%;
   margin: 0 0 0 14.5px;
 }
+
+.weatherTempBox {
+  padding: 20px;
+  border: 2px solid white;
+  width: 35%;
+  margin:   auto;
+  margin-top: 50px;
+}
+
+.inputOne {
+  color: black;
+  float: left;
+}
+
+.btn {
+  height: 40px;
+  width: 10%;
+}
+
+.form {
+  width: 50%;
+  margin: 0 0 0 -200px;
+}
