@@ -70,7 +70,7 @@ const config = {
     ]
      
   },
-  devServer: {inline: true,
+  devServer: {compress: true,
     disableHostCheck: true},
   resolve: {
     extensions: ['.js', '.jsx']
