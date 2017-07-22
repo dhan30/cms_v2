@@ -5,7 +5,6 @@ import Calendar from '../Calendar/Selectable';
 import 'react-big-calendar/lib/less/styles.less';
 // import 'react-big-calendar/lib/css/react-big-calendar.css'
 import Nav from '../Nav/Nav';
-import List from '../List/List';
 import Icons from '../Nav/Icons/Icons';
 import Images from '../Images/Images';
 import Login from '../Login/Login';
@@ -29,20 +28,19 @@ class Content extends React.Component {
       <div className= " container">
         <div className='row'>
           <div className={style.body}>
-          <div className="col-sm-1 columns" id="col-1">
-            <Images />
-          </div>
+            <div className="col-sm-1 columns" id="col-1">
+              <Images />
+            </div>
             <div className="col-sm-1 columns" id="col-3">
               <Nav changeView={this.viewHandler} active={this.state.view}/>
             </div>
             <div className="col-sm-10 columns" id="col-2">
               {this.state.view === 'calendar' && <Calendar />}
               {this.state.view === 'main' && <Main />}
-              {this.state.view === 'list' && <List />}
               {this.state.view === 'login' && <Login />}
             </div>
           </div>
-      </div>
+        </div>
       </div>
 
     );

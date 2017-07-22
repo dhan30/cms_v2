@@ -33,12 +33,9 @@ const config = {
         ]
       },
       {
-      test: /\.js|\.jsx?$/,
-      use: [
-        {
-          loader: 'babel-loader'
-        }
-      ]
+        test: /\.js|\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif)$/,

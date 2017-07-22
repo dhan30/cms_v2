@@ -4,31 +4,52 @@ import moment from 'moment';
 import events from './events';
 import Search from '../Search/Search';
 
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContext } from 'react-dnd';
+import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop';
+const DragAndDropCalendar = withDragAndDrop(BigCalendar);
+
 BigCalendar.setLocalizer(
   BigCalendar.momentLocalizer(moment)
 );
 
-let Selectable = React.createClass({
+class Dnd extends React.Component{
+  constructor (props) {
+    super(props)
+    this.state = {
+      events: events
+    }
+
+    this.moveEvent = this.moveEvent.bind(this)
+  }
+
+  moveEvent({ event, start, end }) {
+    const { events } = this.state;
+
+    const idx = events.indexOf(event);
+    const updatedEvent = {...event, start, end };
+
+    const nextEvents = [...events]
+    nextEvents.splice(idx, 1, updatedEvent)
+
+    this.setState({
+      events: nextEvents
+    })
+  }
+
   render(){
     return (
-      <div>
-        <Search />
-        <div {...this.props}>
-          <BigCalendar
-            selectable
-            events={events}
-            defaultView='week'
-            scrollToTime={new Date(1970, 1, 1, 6)}
-            defaultDate={new Date(2015, 3, 12)}
-            style = {{height:800}}
-            onSelectEvent={event => alert("Name: " + event.title+'\n' + "Job time:  "+event.start+'\n'+"Description:  "+event.desc+'\n' + "Email:  " + event.email + '\n'+"Phone:  " + event.phone+'\n' + "Rate:  " + event.rate)}
-            onSelectSlot={(slotInfo) => alert(`selected slot: \n\n start ${slotInfo.start.toLocaleString()} \n end: ${slotInfo.end.toLocaleString()}`
-            )}
-          />
-        </div>
-      </div>
+      <DragAndDropCalendar
+        selectable
+        events={this.state.events}
+        onEventDrop={this.moveEvent}
+        defaultView='month'
+        defaultDate={new Date(2015, 3, 12)}
+        onSelectEvent={event => alert("Name: " + event.title+'\n' + "Job time:  "+event.start+'\n'+"Description:  "           +event.desc+'\n' + "Email:  " + event.email + '\n'+"Phone:  " + event.phone+'\n' + "Rate:  " + event.rate)}
+        onSelectSlot={(slotInfo) => alert("No Clients for This Day")}
+      />
     );
   }
-});
+}
 
-export default Selectable;
+export default DragDropContext(HTML5Backend)(Dnd);
