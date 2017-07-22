@@ -20,11 +20,19 @@
 }
 
 .btn {
-  height: 40px;
-  width: 10%;
+  height: 29.2px;
+  width: 75px;
+  margin: 0px 0 0 5px;
+  border-radius: 7px;
+  color: black;
 }
 
 .form {
-  width: 50%;
-  margin: 0 0 0 -200px;
+  width: 150px;
+  height: 30px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 15px 0 0 -420px;
+  text-align: center;
+
 }
