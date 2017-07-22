@@ -6,9 +6,7 @@ const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
-  devServer: {
-  disableHostCheck: true
-},
+
   entry: [
     'webpack-dev-server/client?http://localhost:8000',
     'webpack/hot/dev-server',
@@ -72,7 +70,8 @@ const config = {
     ]
      
   },
-  devServer: {inline: true},
+  devServer: {inline: true,
+    disableHostCheck: true},
   resolve: {
     extensions: ['.js', '.jsx']
   }
