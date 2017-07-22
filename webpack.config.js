@@ -6,6 +6,9 @@ const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
+  devServer: {
+  disableHostCheck: true
+},
   entry: [
     'webpack-dev-server/client?http://localhost:8000',
     'webpack/hot/dev-server',
