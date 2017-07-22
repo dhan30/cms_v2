@@ -7,6 +7,224 @@ export default [{
     email: 'kos.koha@gmail.com',
     phone: '202-650-9228',
     rate: "$80/h"
+  },{
+    'title': 'Jef Richards',
+    'start': new Date(2015, 3, 2, 0, 0, 0),
+    'end': new Date(2015, 3, 2, 0, 0, 0),
+    name:'Jef Richards',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+  {
+    'title': 'Ben Adams',
+    'start': new Date(2015, 3, 3, 0, 0, 0),
+    'end': new Date(2015, 3, 3, 0, 0, 0),
+    name:'Ben Adams',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+  {
+    'title': 'Tom Cruse',
+    'start': new Date(2015, 3, 3, 0, 0, 0),
+    'end': new Date(2015, 3, 3, 0, 0, 0),
+    name:'Tom lee',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Davin Cool',
+    'start': new Date(2015, 3, 4, 0, 0, 0),
+    'end': new Date(2015, 3, 4, 0, 0, 0),
+    name:'David Cool',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Nina Joo',
+    'start': new Date(2015, 3, 5, 0, 0, 0),
+    'end': new Date(2015, 3, 5, 0, 0, 0),
+    name:'Nina Joo',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Bad job',
+    'start': new Date(2015, 3, 6, 0, 0, 0),
+    'end': new Date(2015, 3, 6, 0, 0, 0),
+    name:'Rita Neek',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+      {
+    'title': 'My daugter',
+    'start': new Date(2015, 3, 27, 0, 0, 0),
+    'end': new Date(2015, 3, 30, 0, 0, 0),
+    name:'Eva',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+        {
+    'title': 'Eva Koby',
+    'start': new Date(2015, 3, 30, 0, 0, 0),
+    'end': new Date(2015, 3, 30, 0, 0, 0),
+    name:'Eva Koby',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+        {
+    'title': 'Mia Etta',
+    'start': new Date(2015, 3, 30, 0, 0, 0),
+    'end': new Date(2015, 3, 30, 0, 0, 0),
+    name:'Mia Etta',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'My sister',
+    'start': new Date(2015, 3, 6, 0, 0, 0),
+    'end': new Date(2015, 3, 6, 0, 0, 0),
+    name:'Linda',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },  {
+    'title': 'Cool Guy',
+    'start': new Date(2015, 3, 6, 0, 0, 0),
+    'end': new Date(2015, 3, 6, 0, 0, 0),
+    name:'Tom lee',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Tika Mo',
+    'start': new Date(2015, 3, 16, 0, 0, 0),
+    'end': new Date(2015, 3, 16, 0, 0, 0),
+    name:'Tom lee',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Peater Anders',
+    'start': new Date(2015, 3, 18, 0, 0, 0),
+    'end': new Date(2015, 3, 18, 0, 0, 0),
+    name:'Peater Anders',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Monika Bely',
+    'start': new Date(2015, 3, 18, 0, 0, 0),
+    'end': new Date(2015, 3, 18, 0, 0, 0),
+    name:'Monika Bely',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Reference Job',
+    'start': new Date(2015, 3, 19, 0, 0, 0),
+    'end': new Date(2015, 3, 20, 0, 0, 0),
+    name:'Tom lee',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Nathan Davidson',
+    'start': new Date(2015, 3, 20, 0, 0, 0),
+    'end': new Date(2015, 3, 20, 0, 0, 0),
+    name:'Nathan Davidson',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+    {
+    'title': 'Allan Bay',
+    'start': new Date(2015, 3, 21, 0, 0, 0),
+    'end': new Date(2015, 3, 21, 0, 0, 0),
+    name:'Allan Bay',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+      {
+    'title': 'Allan Back',
+    'start': new Date(2015, 3, 23, 0, 0, 0),
+    'end': new Date(2015, 3, 23, 0, 0, 0),
+    name:'Allan Bay',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+      {
+    'title': 'Lindon Jell',
+    'start': new Date(2015, 3, 23, 0, 0, 0),
+    'end': new Date(2015, 3, 23, 0, 0, 0),
+    name:'Lindon Jell',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+      {
+    'title': 'Patrick Nolan',
+    'start': new Date(2015, 3, 26, 0, 0, 0),
+    'end': new Date(2015, 3, 26, 0, 0, 0),
+    name:'Patrik Nolan',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+      {
+    'title': 'Lee',
+    'start': new Date(2015, 3, 27, 0, 0, 0),
+    'end': new Date(2015, 3, 27, 0, 0, 0),
+    name:'Lee',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
+  },
+      {
+    'title': 'Nikolas Nik',
+    'start': new Date(2015, 3, 27, 0, 0, 0),
+    'end': new Date(2015, 3, 27, 0, 0, 0),
+    name:'Nikolas Nik',
+    desc: 'Old client',
+    email: 'kos.koha@gmail.com',
+    phone: '202-650-9228',
+    rate: "$80/h"
   },
   {
     'title': 'Penelopa Cruse',
