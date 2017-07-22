@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './style.css';
 
-const url = "http://api.openweathermap.org/data/2.5/weather?q=chantilly,us&units=imperial&APPID=fa408109b6ec2e010a72ee13665a44df";
 
 class Weather extends React.Component {
   constructor(props) {
@@ -11,11 +10,13 @@ class Weather extends React.Component {
     };
   }
   componentDidMount () {
-    this.weatherApi(url);
+    this.weatherApi();
+    // this.myFunc();
 
   };
 
   weatherApi() {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=chantilly,us&units=imperial&APPID=fa408109b6ec2e010a72ee13665a44df";
 
     fetch(url).then((response) => {
       return response.json();
@@ -32,6 +33,12 @@ class Weather extends React.Component {
       return err;
     }).then();
   }
+
+  myFunc() {
+    const info = document.getElementById('city').value;
+
+    console.log(info);
+  }
   render() {
     const result = JSON.stringify(this.state.weatherTemp);
     const temp = JSON.stringify(this.state.weatherDataP);
@@ -45,7 +52,7 @@ class Weather extends React.Component {
         <div className="container">
           <div className="row group-form">
             <input type="text" name="city" id="city" className={style.form} placeholder="insert city"></input>
-            <button id="submitWeather" className={style.btn}>Click</button>
+            <button id="submitWeather" className={style.btn} onClick={this.myFunc}>Click</button>
           </div>
         </div>
         <div>
@@ -55,6 +62,7 @@ class Weather extends React.Component {
             {"Tempature:" + " " + result + "°"}<br/><br/>
             {"Description:" + " " + description}<br/><br/>
             {"Humidity:" + " " + temp + "%"}
+
           </p>
         </div>
       </div>
