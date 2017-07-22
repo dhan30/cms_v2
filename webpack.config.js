@@ -70,10 +70,8 @@ const config = {
     ]
      
   },
-  devServer: {
-    compress: true,
-    public: 'store-client-nestroia1.c9users.io'
-  },
+  devServer: {compress: true,
+    disableHostCheck: true},
   resolve: {
     extensions: ['.js', '.jsx']
   }
