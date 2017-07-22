@@ -49,10 +49,12 @@ class Weather extends React.Component {
 
     return (
       <div className={style.weatherBox}>
+      <input type="text" name="city" id="city" className={style.form} placeholder="insert city"></input>
+      <button id="submitWeather" className={style.btn} onClick={this.myFunc}>Click</button>
         <div className="container">
+
           <div className="row group-form">
-            <input type="text" name="city" id="city" className={style.form} placeholder="insert city"></input>
-            <button id="submitWeather" className={style.btn} onClick={this.myFunc}>Click</button>
+
           </div>
         </div>
         <div>
