@@ -6,7 +6,6 @@ var PORT = process.env.PORT || 3000;
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
-  public:'127.0.0.0'
   hot: true,
   historyApiFallback: true
 }).listen(PORT,"127.0.0.0", (err, result) => {
