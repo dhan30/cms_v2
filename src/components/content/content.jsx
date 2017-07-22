@@ -1,7 +1,9 @@
 import React from 'react';
 import Main from '../Main/Main';
 import style from './style.css';
-import Selectable from '../Calendar/Selectable';
+import Calendar from '../Calendar/Selectable';
+import 'react-big-calendar/lib/less/styles.less';
+// import 'react-big-calendar/lib/css/react-big-calendar.css'
 import Nav from '../Nav/Nav';
 import List from '../List/List';
 import Icons from '../Nav/Icons/Icons';
@@ -23,7 +25,7 @@ class Content extends React.Component {
   };
   render() {
     return (
-      <div className= " container-fluid main-container container">
+      <div className= " container">
         <div className='row'>
           <div className={style.body}>
           <div className="col-sm-1 columns" id="col-1">
@@ -33,7 +35,7 @@ class Content extends React.Component {
               <Nav changeView={this.viewHandler} active={this.state.view}/>
             </div>
             <div className="col-sm-10 columns" id="col-2">
-              {this.state.view === 'calendar' && <Selectable />}
+              {this.state.view === 'calendar' && <Calendar />}
               {this.state.view === 'main' && <Main />}
               {this.state.view === 'list' && <List />}
             </div>

@@ -25,9 +25,15 @@ const config = {
   ],
   module: {
     rules: [
+         {
+        test: /\.less?$/,
+        loader: 'style-loader!css-loader!less-loader',
+        include: [
+          path.resolve(__dirname, '../')
+        ]
+      },
       {
       test: /\.js|\.jsx?$/,
-      exclude: /(node_modules)/,
       use: [
         {
           loader: 'babel-loader'
@@ -36,7 +42,6 @@ const config = {
       },
       {
         test: /\.(png|jpg|gif)$/,
-        exclude: /(node_modules)/,
         use: [
           {
           loader: 'url-loader?name=images/[name].[ext]'
@@ -45,7 +50,6 @@ const config = {
       },
       {
         test: /\.json$/,
-        exclude: /(node_modules)/,
         use: [
           {
             loader: 'json-loader'
@@ -54,7 +58,6 @@ const config = {
       },
       {
         test: /\.css$/,
-        exclude: /(node_modules)/,
         use: [
           'style-loader',
           {
@@ -67,6 +70,7 @@ const config = {
         ]
       }
     ]
+     
   },
   devServer: {inline: true},
   resolve: {
