@@ -19,6 +19,11 @@ color: black;
 }
 
 #col-2{
+<<<<<<< HEAD
   /* color: white; */
   /* background-color: grey; */
+=======
+  background-color: black;
+  color: white;
+>>>>>>> 391f25f368c63c572ec534c23d5c5cbdf5b3132f
 }

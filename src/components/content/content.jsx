@@ -8,6 +8,7 @@ import Nav from '../Nav/Nav';
 import List from '../List/List';
 import Icons from '../Nav/Icons/Icons';
 import Images from '../Images/Images';
+import Login from '../Login/Login';
 
 
 
@@ -16,7 +17,7 @@ class Content extends React.Component {
     super(props);
 
     this.state = {
-      view: 'main'
+      view: 'login'
     };
   }
 
@@ -38,6 +39,7 @@ class Content extends React.Component {
               {this.state.view === 'calendar' && <Calendar />}
               {this.state.view === 'main' && <Main />}
               {this.state.view === 'list' && <List />}
+              {this.state.view === 'login' && <Login />}
             </div>
           </div>
       </div>

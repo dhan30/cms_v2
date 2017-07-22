@@ -18,5 +18,11 @@
     "name": "employee",
     "key": "4",
     "value": "EMPLOYEE"
+  },
+  {
+    "name": "login",
+    "key": "5",
+    "value": "LOGIN"
   }
+
 ]
