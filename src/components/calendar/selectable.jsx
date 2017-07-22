@@ -44,7 +44,7 @@ class Dnd extends React.Component{
         events={this.state.events}
         onEventDrop={this.moveEvent}
         defaultView='month'
-        defaultDate={new Date(2015, 3, 12)}
+        defaultDate={new Date(2017, 6, 12)}
         onSelectEvent={event => alert("Name: " + event.title+'\n' + "Job time:  "+event.start+'\n'+"Description:  "           +event.desc+'\n' + "Email:  " + event.email + '\n'+"Phone:  " + event.phone+'\n' + "Rate:  " + event.rate)}
         onSelectSlot={(slotInfo) => alert("No Clients for This Day")}
       />
